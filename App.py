@@ -184,8 +184,8 @@ def ConnectGoogle():
         try:
             server = smtplib.SMTP('smtp.gmail.com', 587)
             server.starttls()
-            server.login('imedzairi1996@gmail.com', '20725789')
-            server.sendmail('imedzairi1996@gmail.com',
+            server.login('your email', 'your email password')
+            server.sendmail('reciver email',
                             name_entry.get(),
                             str(n))
             messagebox.showinfo("Mailling", " mail sent Successfully")
